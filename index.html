@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yammatcha | Matcha, Coffee & Tongkrongan</title>
+    <link rel="icon" href="img/logo-yammatcha.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:title" content="Yammatcha" />
+    <meta
+      property="og:description"
+      content="Matcha, Coffee, Cemilan & Tongkrongan Kreatif di Kragilan"
+    />
+    <meta property="og:image" content="img/logo-yammatcha.png" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">
+        <img src="img/logo-yammatcha.png" alt="Logo Yammatcha" />
+        <span>Yammatcha</span>
+      </a>
+
+      <nav class="navbar" id="navbar">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#community">Candatawamu</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="badge">Matcha • Coffee • Chocolate • Cemilan • Tongkrongan</p>
+        <h1>Yammatcha, Tempat Nongkrong Hangat di Kragilan</h1>
+        <p class="hero-text">
+          Bukan cuma kedai minuman. Yammatcha adalah tempat nongkrong, tempat
+          cerita, tempat bikin konten, nobar, dan kumpul bareng teman-teman.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="btn primary">Lihat Menu</a>
+          <a
+            href="https://wa.me/6285882851487"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn secondary"
+          >
+            Pesan WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="img/profileyammatcha2.jpg" alt="Kedai Yammatcha" />
+        <div class="floating-card">
+          <h3>Yammatcha</h3>
+          <p>This is my happy drink</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <div class="highlight-card">
+        <h3>🍵 Minuman Signature</h3>
+        <p>Matcha, coffee, dan chocolate dengan rasa creamy dan segar.</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>🎬 Nobar & Nongkrong</h3>
+        <p>Tempat santai untuk ngobrol, nonton bareng, dan kumpul komunitas.</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>📸 Candatawamu</h3>
+        <p>
+          Wadah kreatif anak tongkrongan yang ikut menghidupkan dan meramaikan
+          Yammatcha.
+        </p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/malambaru.jpg" alt="Suasana Kedai Yammatcha" />
+      </div>
+
+      <div class="about-text">
+        <p class="section-label">Tentang Kami</p>
+        <h2>Lebih dari sekedar kedai kecil</h2>
+        <p>
+          Yammatcha hadir di Kp. Dumus, Desa Pematang, Kragilan, Serang, Banten.
+          Kedai ini menyediakan berbagai minuman seperti matcha, coffee,
+          chocolate, serta makanan ringan dengan harga yang ramah untuk anak
+          muda.
+        </p>
+        <p>
+          Yammatcha juga menjadi tempat berkumpul komunitas, tempat nongkrong,
+          tempat nobar, dan ruang kecil untuk menciptakan cerita bersama.
+        </p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3>Harga Ramah</h3>
+        <p>
+          Menu mulai dari harga terjangkau untuk pelajar, mahasiswa, dan anak
+          tongkrongan.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Tempat Santai</h3>
+        <p>
+          Dilengkapi kursi kecil, area nongkrong, dan suasana malam yang hangat.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Ruang Komunitas</h3>
+        <p>
+          Menjadi tempat berkumpul, nobar, membuat konten, dan kegiatan kreatif
+          anak muda.
+        </p>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <p class="section-label center">Menu Favorit</p>
+      <h2 class="center-title">Minuman & Cemilan Andalan</h2>
+
+      <div class="filter-buttons">
+        <button class="filter active" data-category="all">Semua</button>
+        <button class="filter" data-category="matcha">Matcha</button>
+        <button class="filter" data-category="coffee">Coffee</button>
+        <button class="filter" data-category="chocolate">Chocolate</button>
+        <button class="filter" data-category="cemilan">Cemilan</button>
+        <button class="filter" data-category="mie">Mie</button>
+      </div>
+
+      <div class="menu-grid">
+        <div
+          class="menu-card"
+          data-category="matcha"
+          data-name="Original Matcha"
+          data-price="Rp10.000"
+          data-desc="Matcha original dengan rasa segar dan creamy."
+          data-img="img/menu/original-matcha.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/original-matcha.jpg" alt="Original Matcha" />
+          </div>
+          <div class="menu-info">
+            <h3>Original Matcha</h3>
+            <p>Matcha original dengan rasa segar dan creamy.</p>
+            <span>Rp10.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="matcha"
+          data-name="Coconut Matcha"
+          data-price="Rp10.000"
+          data-desc="Perpaduan matcha dan rasa coconut yang lembut."
+          data-img="img/menu/coconut-matcha.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/coconut-matcha.jpg" alt="Coconut Matcha" />
+          </div>
+          <div class="menu-info">
+            <h3>Coconut Matcha</h3>
+            <p>Perpaduan matcha dan rasa coconut yang lembut.</p>
+            <span>Rp10.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="matcha"
+          data-name="Strawberry Matcha"
+          data-price="Rp12.000"
+          data-desc="Matcha segar dengan sentuhan strawberry manis."
+          data-img="img/menu/strawberry-matcha.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/strawberry-matcha.jpg" alt="Strawberry Matcha" />
+          </div>
+          <div class="menu-info">
+            <h3>Strawberry Matcha</h3>
+            <p>Matcha segar dengan sentuhan strawberry manis.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="matcha"
+          data-name="Chocolatte Matcha"
+          data-price="Rp12.000"
+          data-desc="Matcha creamy dengan rasa chocolate yang nikmat."
+          data-img="img/menu/chocolatte-matcha.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/chocolatte-matcha.jpg" alt="Chocolatte Matcha" />
+          </div>
+          <div class="menu-info">
+            <h3>Chocolatte Matcha</h3>
+            <p>Matcha creamy dengan rasa chocolate yang nikmat.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="matcha"
+          data-name="Matcha Latte"
+          data-price="Rp12.000"
+          data-desc="Perpaduan matcha dan susu segar yang lembut."
+          data-img="img/menu/matcha-latte.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/matcha-latte.jpg" alt="Matcha Latte" />
+          </div>
+          <div class="menu-info">
+            <h3>Matcha Latte</h3>
+            <p>Perpaduan matcha dan susu segar yang lembut.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="matcha"
+          data-name="Oreo Matcha"
+          data-price="Rp12.000"
+          data-desc="Matcha dengan topping oreo yang manis dan crunchy."
+          data-img="img/menu/oreo-matcha.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/oreo-matcha.jpg" alt="Oreo Matcha" />
+          </div>
+          <div class="menu-info">
+            <h3>Oreo Matcha</h3>
+            <p>Matcha dengan topping oreo yang manis dan crunchy.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="coffee"
+          data-name="Dalgona Coffee"
+          data-price="Rp10.000"
+          data-desc="Kopi dalgona creamy dengan rasa khas."
+          data-img="img/menu/dalgona-coffee.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/dalgona-coffee.jpg" alt="Dalgona Coffee" />
+          </div>
+          <div class="menu-info">
+            <h3>Dalgona Coffee</h3>
+            <p>Kopi dalgona creamy dengan rasa khas.</p>
+            <span>Rp10.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="coffee"
+          data-name="Moca Dalgona"
+          data-price="Rp12.000"
+          data-desc="Dalgona dengan rasa moca yang manis dan lembut."
+          data-img="img/menu/moca-dalgona.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/moca-dalgona.jpg" alt="Moca Dalgona" />
+          </div>
+          <div class="menu-info">
+            <h3>Moca Dalgona</h3>
+            <p>Dalgona dengan rasa moca yang manis dan lembut.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="coffee"
+          data-name="Coffee Latte"
+          data-price="Rp12.000"
+          data-desc="Kopi susu dingin yang cocok untuk teman nongkrong."
+          data-img="img/menu/coffee-latte.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/coffee-latte.jpg" alt="Coffee Latte" />
+          </div>
+          <div class="menu-info">
+            <h3>Coffee Latte</h3>
+            <p>Kopi susu dingin yang cocok untuk teman nongkrong.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="coffee"
+          data-name="Caramel Coffee"
+          data-price="Rp12.000"
+          data-desc="Kopi creamy dengan rasa caramel manis."
+          data-img="img/menu/caramel-coffee.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/caramel-coffee.jpg" alt="Caramel Coffee" />
+          </div>
+          <div class="menu-info">
+            <h3>Caramel Coffee</h3>
+            <p>Kopi creamy dengan rasa caramel manis.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="coffee"
+          data-name="Butterscotch Coffee"
+          data-price="Rp12.000"
+          data-desc="Kopi dengan rasa butterscotch yang khas."
+          data-img="img/menu/butterscotch-coffee.jpg"
+        >
+          <div class="menu-img">
+            <img
+              src="img/menu/butterscotch-coffee.jpg"
+              alt="Butterscotch Coffee"
+            />
+          </div>
+          <div class="menu-info">
+            <h3>Butterscotch Coffee</h3>
+            <p>Kopi dengan rasa butterscotch yang khas.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="chocolate"
+          data-name="Original Chocolate"
+          data-price="Rp10.000"
+          data-desc="Chocolate original dengan rasa manis dan creamy."
+          data-img="img/menu/original-chocolate.jpg"
+        >
+          <div class="menu-img">
+            <img
+              src="img/menu/original-chocolate.jpg"
+              alt="Original Chocolate"
+            />
+          </div>
+          <div class="menu-info">
+            <h3>Original Chocolate</h3>
+            <p>Chocolate original dengan rasa manis dan creamy.</p>
+            <span>Rp10.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="chocolate"
+          data-name="Coconut Chocolate"
+          data-price="Rp10.000"
+          data-desc="Chocolate dengan sentuhan coconut yang lembut."
+          data-img="img/menu/coconut-chocolate.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/coconut-chocolate.jpg" alt="Coconut Chocolate" />
+          </div>
+          <div class="menu-info">
+            <h3>Coconut Chocolate</h3>
+            <p>Chocolate dengan sentuhan coconut yang lembut.</p>
+            <span>Rp10.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="chocolate"
+          data-name="Strawberry Chocolate"
+          data-price="Rp12.000"
+          data-desc="Chocolate creamy dengan rasa strawberry segar."
+          data-img="img/menu/strawberry-chocolate.jpg"
+        >
+          <div class="menu-img">
+            <img
+              src="img/menu/strawberry-chocolate.jpg"
+              alt="Strawberry Chocolate"
+            />
+          </div>
+          <div class="menu-info">
+            <h3>Strawberry Chocolate</h3>
+            <p>Chocolate creamy dengan rasa strawberry segar.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="chocolate"
+          data-name="Oreo Chocolate"
+          data-price="Rp12.000"
+          data-desc="Chocolate dengan topping oreo yang renyah."
+          data-img="img/menu/oreo-chocolate.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/oreo-chocolate.jpg" alt="Oreo Chocolate" />
+          </div>
+          <div class="menu-info">
+            <h3>Oreo Chocolate</h3>
+            <p>Chocolate dengan topping oreo yang renyah.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="chocolate"
+          data-name="Double Chocolate"
+          data-price="Rp12.000"
+          data-desc="Rasa chocolate lebih tebal untuk pecinta coklat."
+          data-img="img/menu/double-chocolate.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/double-chocolate.jpg" alt="Double Chocolate" />
+          </div>
+          <div class="menu-info">
+            <h3>Double Chocolate</h3>
+            <p>Rasa chocolate lebih tebal untuk pecinta coklat.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="chocolate"
+          data-name="Chocolate Latte"
+          data-price="Rp12.000"
+          data-desc="Chocolate latte dingin yang creamy dan menyegarkan."
+          data-img="img/menu/chocolate-latte.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/chocolate-latte.jpg" alt="Chocolate Latte" />
+          </div>
+          <div class="menu-info">
+            <h3>Chocolate Latte</h3>
+            <p>Chocolate latte dingin yang creamy dan menyegarkan.</p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="cemilan"
+          data-name="Baso Goreng"
+          data-price="Rp6.000"
+          data-desc="Cemilan gurih yang pas untuk teman ngobrol."
+          data-img="img/menu/baso-goreng.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/baso-goreng.jpg" alt="Baso Goreng" />
+          </div>
+          <div class="menu-info">
+            <h3>Baso Goreng</h3>
+            <p>Cemilan gurih yang pas untuk teman ngobrol.</p>
+            <span>Rp6.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="cemilan"
+          data-name="Sosis Goreng"
+          data-price="Rp6.000"
+          data-desc="Sosis goreng hangat, sederhana tapi selalu dicari."
+          data-img="img/menu/sosis-goreng.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/sosis-goreng.jpg" alt="Sosis Goreng" />
+          </div>
+          <div class="menu-info">
+            <h3>Sosis Goreng</h3>
+            <p>Sosis goreng hangat, sederhana tapi selalu dicari.</p>
+            <span>Rp6.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="cemilan"
+          data-name="Kentang Goreng"
+          data-price="Rp8.000"
+          data-desc="Kentang goreng renyah untuk menemani waktu santai."
+          data-img="img/menu/kentang-goreng.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/kentang-goreng.jpg" alt="Kentang Goreng" />
+          </div>
+          <div class="menu-info">
+            <h3>Kentang Goreng</h3>
+            <p>Kentang goreng renyah untuk menemani waktu santai.</p>
+            <span>Rp8.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="cemilan"
+          data-name="Otak-Otak"
+          data-price="Rp6.000"
+          data-desc="Otak-otak gurih dengan saus pedas, cocok untuk cemilan santai."
+          data-img="img/menu/otak-otak.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/otak-otak.jpg" alt="Otak-Otak" />
+          </div>
+          <div class="menu-info">
+            <h3>Otak-Otak</h3>
+            <p>
+              Otak-otak gurih dengan saus pedas, cocok untuk cemilan santai.
+            </p>
+            <span>Rp6.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="cemilan"
+          data-name="Mixed Snacks"
+          data-price="Rp12.000"
+          data-desc="Campuran kentang, sosis, baso, dan otak-otak dalam satu porsi."
+          data-img="img/menu/mixed-snacks.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/mixed-snacks.jpg" alt="Mixed Snacks" />
+          </div>
+          <div class="menu-info">
+            <h3>Mixed Snacks <small class="menu-badge">Best Seller</small></h3>
+            <p>
+              Campuran kentang, sosis, baso, dan otak-otak dalam satu porsi.
+            </p>
+            <span>Rp12.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="mie"
+          data-name="Indomie Goreng"
+          data-price="Rp7.000"
+          data-desc="Indomie goreng hangat, cocok untuk teman nongkrong malam. Bisa tambah telur +Rp3.000."
+          data-img="img/menu/mie-goreng.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/mie-goreng.jpg" alt="Indomie Goreng" />
+          </div>
+          <div class="menu-info">
+            <h3>Indomie Goreng</h3>
+            <p>Indomie goreng hangat untuk teman nongkrong malam.</p>
+            <small class="menu-note">Tambah telur / pakai telur +Rp3.000</small>
+            <span>Rp7.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="mie"
+          data-name="Indomie Goreng Rendang"
+          data-price="Rp7.000"
+          data-desc="Indomie goreng rasa rendang dengan cita rasa gurih. Bisa tambah telur +Rp3.000."
+          data-img="img/menu/mie-goreng.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/mie-goreng.jpg" alt="Indomie Goreng Rendang" />
+          </div>
+          <div class="menu-info">
+            <h3>Indomie Goreng Rendang</h3>
+            <p>Mie goreng rasa rendang yang gurih dan mengenyangkan.</p>
+            <small class="menu-note">Tambah telur / pakai telur +Rp3.000</small>
+            <span>Rp7.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="mie"
+          data-name="Indomie Goreng Aceh"
+          data-price="Rp7.000"
+          data-desc="Indomie goreng rasa Aceh dengan bumbu khas yang kuat. Bisa tambah telur +Rp3.000."
+          data-img="img/menu/mie-goreng.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/mie-goreng.jpg" alt="Indomie Goreng Aceh" />
+          </div>
+          <div class="menu-info">
+            <h3>Indomie Goreng Aceh</h3>
+            <p>Mie goreng rasa Aceh dengan bumbu khas yang kuat.</p>
+            <small class="menu-note">Tambah telur / pakai telur +Rp3.000</small>
+            <span>Rp7.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="mie"
+          data-name="Indomie Soto"
+          data-price="Rp7.000"
+          data-desc="Indomie soto rebus hangat dengan kuah gurih. Bisa tambah telur +Rp3.000."
+          data-img="img/menu/mie-rebus.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/mie-rebus.jpg" alt="Indomie Soto" />
+          </div>
+          <div class="menu-info">
+            <h3>Indomie Soto</h3>
+            <p>Mie rebus rasa soto yang hangat dan gurih.</p>
+            <small class="menu-note">Tambah telur / pakai telur +Rp3.000</small>
+            <span>Rp7.000</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-card"
+          data-category="mie"
+          data-name="Indomie Ayam Bawang"
+          data-price="Rp7.000"
+          data-desc="Indomie ayam bawang rebus dengan kuah hangat dan rasa gurih. Bisa tambah telur +Rp3.000."
+          data-img="img/menu/mie-rebus.jpg"
+        >
+          <div class="menu-img">
+            <img src="img/menu/mie-rebus.jpg" alt="Indomie Ayam Bawang" />
+          </div>
+
+          <div class="menu-info">
+            <h3>Indomie Ayam Bawang</h3>
+            <p>Mie rebus rasa ayam bawang yang sederhana dan nikmat.</p>
+            <small class="menu-note">Tambah telur / pakai telur +Rp3.000</small>
+            <span>Rp7.000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="community" id="community">
+      <div class="community-text">
+        <p class="section-label">Candatawamu</p>
+        <h2>Komunitas kreatif yang tumbuh bersama Yammatcha</h2>
+        <p>
+          Candatawamu2_6 adalah wadah anak tongkrongan yang aktif membuat
+          konten, berkumpul, dan meramaikan Yammatcha. Dari nongkrong biasa,
+          lahir cerita, ide, konten, dan kegiatan yang membuat kedai ini punya
+          nyawa.
+        </p>
+
+        <div class="social-buttons">
+          <a
+            href="https://www.instagram.com/candatawamu2_6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn primary"
+          >
+            Instagram Candatawamu
+          </a>
+
+          <a
+            href="https://www.instagram.com/yammatcha_kragilan"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn secondary"
+          >
+            Instagram Yammatcha
+          </a>
+        </div>
+      </div>
+
+      <div class="community-img">
+        <img
+          src="img/candatawamu26.jpg"
+          alt="Kegiatan Candatawamu di Yammatcha"
+        />
+      </div>
+    </section>
+
+    <section class="stats">
+      <div>
+        <h3 class="counter" data-target="27">0</h3>
+        <p>Menu</p>
+      </div>
+      <div>
+        <h3 class="counter" data-target="999">0</h3>
+        <p>Pelanggan</p>
+      </div>
+      <div>
+        <h3 class="counter" data-target="10">0</h3>
+        <p>Kegiatan</p>
+      </div>
+      <div>
+        <h3 class="counter" data-target="999">0</h3>
+        <p>Tongkrongan</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <p class="section-label center">Testimoni</p>
+      <h2 class="center-title">Apa Kata Mereka?</h2>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"Tempatnya santai, cocok buat nongkrong bareng teman-teman."</p>
+          <h3>Pengunjung Yammatcha</h3>
+        </div>
+        <div class="testimonial-card">
+          <p>"Menu matcha dan cemilannya enak, harganya juga ramah."</p>
+          <h3>Pelanggan Setia</h3>
+        </div>
+        <div class="testimonial-card">
+          <p>"Yammatcha bukan cuma kedai, tapi tempat kumpul yang seru."</p>
+          <h3>Anak Tongkrongan</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <p class="section-label center">FAQ</p>
+      <h2 class="center-title">Pertanyaan Umum</h2>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>Apakah Yammatcha hanya menjual matcha?</h3>
+          <p>
+            Tidak. Yammatcha juga menyediakan coffee, chocolate, cemilan, dan
+            mie instan.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Apakah bisa datang untuk nongkrong?</h3>
+          <p>
+            Bisa. Yammatcha menyediakan tempat santai untuk nongkrong dan
+            berkumpul.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Apakah bisa pesan lewat WhatsApp?</h3>
+          <p>
+            Bisa. Pengunjung dapat menghubungi WhatsApp yang tersedia di
+            website.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Apakah yammatcha sering mengadakan nobar?</h3>
+          <p>
+            Ya. pengunjung dapat menyaksikan nobar dengan film dan tontonan yang
+            menarik secara gratis .
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <p class="section-label center">Galeri</p>
+      <h2 class="center-title">Suasana Yammatcha</h2>
+
+      <div class="gallery-grid">
+        <img src="img/menu/gabungan.jpg" alt="Yammatcha malam hari" />
+        <img src="img/menu/nobarpesta.jpg" alt="Kedai Yammatcha" />
+        <img src="img/menu/malam.jpg" alt="Original Matcha" />
+        <img src="img/menu/persib.jpg" alt="Caramel Coffee" />
+        <img src="img/menu/kaca.jpg" alt="Caramel Coffee" />
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Kunjungi Yammatcha</h2>
+      <p>Kp. Dumus, Desa Pematang, Kragilan, Serang, Banten</p>
+      <p>WhatsApp: 0858-8285-1487</p>
+      <p>Jam Buka: 10.00 - 00.00 WIB</p>
+
+      <div class="contact-social">
+        <a
+          href="https://www.instagram.com/yammatcha_kragilan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @yammatcha_kragilan
+        </a>
+
+        <a
+          href="https://www.instagram.com/candatawamu2_6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @candatawamu2_6
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@yammatcha1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🎵 TikTok Yammatcha
+        </a>
+        <a
+          href="https://www.tiktok.com/@candatawamu2_6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🎵 TikTok Candatawamu
+        </a>
+      </div>
+
+      <a
+        href="https://wa.me/6285882851487"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn primary"
+      >
+        Chat Sekarang
+      </a>
+
+      <a
+        href="https://maps.app.goo.gl/CKvmiiS4Cj8uB3JX6"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn secondary"
+      >
+        📍 Lihat Lokasi Yammatcha
+      </a>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=-6.1653788,106.2647812&z=17&output=embed"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <footer>
+      <img
+        src="img/logo-yammatcha.png"
+        alt="Logo Yammatcha"
+        class="footer-logo"
+      />
+
+      <h3>Yammatcha</h3>
+
+      <p>Matcha • Coffee • Smoothies</p>
+
+      <p>Kp. Dumus, Desa Pematang, Kragilan, Serang, Banten</p>
+    </footer>
+
+    <a
+      href="https://wa.me/6285882851487"
+      class="wa-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      💬
+    </a>
+
+    <div class="menu-modal" id="menuModal">
+      <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <img id="modalImg" src="" alt="Menu Yammatcha" />
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <h3 id="modalPrice"></h3>
+        <a
+          id="orderBtn"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn primary"
+        >
+          Pesan via WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
