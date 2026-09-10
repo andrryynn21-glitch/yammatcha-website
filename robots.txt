@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yammatcha-website.vercel.app/sitemap.xml
